@@ -1,0 +1,102 @@
+h1 {
+  font-size: 72px;
+  line-height: 88px;
+  font-family: 'Montserrat_test0-Bold', sans-serif;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.1px;
+  font-family: 'Montserrat_test0-Bold', sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat_test0-Bold', sans-serif;
+  font-weight: 700;
+  margin-top: 21px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Montserrat_test0-Bold', sans-serif;
+  font-weight: 700;
+  margin-top: 56px;
+  margin-bottom: 14px;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  cursor: pointer;
+  &:hover {
+    color: lighten($primary, 20%);
+  }
+}
+
+p {
+  color: #505050;
+}
+
+.bold {
+  font-family: 'Montserrat_test0-Bold', sans-serif;
+  font-weight: 700;
+}
+
+::selection {
+  background-color: $primary;
+  color: #fff;
+}
+
+.container {
+  width: 886px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 100%;
+  &:not(.-dark) {
+    background-color: #fff;
+  }
+  &.-dark {
+    background-color: #333;
+  }
+  &:not(.-thick) {
+    height: 1px;
+  }
+  &.-thick {
+    height: 2px;
+  }
+}
+
+.panel {
+  height: 44px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 22px;
+  display: inline-block;
+  a {
+    line-height: 21px;
+    margin: 0 12px;
+    color: $navigation;
+    transition: color 0.2s ease;
+    &:hover, &:focus,
+    &.active {
+      color: $primary;
+    }
+  }
+  &.-grey {
+    background-color: #F5F6F7;
+  }
+}

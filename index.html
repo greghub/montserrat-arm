@@ -1,66 +1,177 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>
-MontserratVH05-Regular
- - Web font preview
-</title>
-<style type='text/css'>
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Montserrat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@font-face {
-    font-family: 'MontserratVH05-Regular';
-    src: url('MontserratVH05-Regular.eot?#iefix') format('embedded-opentype'),  url('MontserratVH05-Regular.woff') format('woff'), url('MontserratVH05-Regular.ttf')  format('truetype'), url('MontserratVH05-Regular.svg#MontserratVH05-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" href="public/css/jquery-ui.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+  </head>
+  <body>
 
-body {
-    font-family: 'MontserratVH05-Regular';
-}
+    <section class="main -flex -flex-v -align-center -white">
+      <nav class="navigation -flex -justify-between wow fadeInUp">
+        <a href="#preview" class="nav-item">Font Preview</a>
+        <a href="#test-font" class="nav-item">Test Font</a>
+        <a href="#symbols" class="nav-item">Symbols</a>
+        <a href="#about" class="nav-item">About Armenian Letters</a>
+      </nav>
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
+      <div class="container -text-center wow fadeIn">
+        <div class="separator -thick"></div>
+        <h1>Montserrat Armenian</h1>
+        <div class="separator"></div>
+        <h3>Հայտնի տառատեսակի հայերեն տարբերակ</h3>
+        <h1 class="-space-07">Մոնսերատ Հայերեն</h1>
+        <div class="description -space-02">Վասիլ Ա-ն նպատակ դրեց ստեղծել հունա-հռոմեական կամ բյուզանդական իրավունքի մի ընդհանուր օրենսգիրք, որտեղ ժամանակագրական կարգով շարադրված լինեն կայսրերի հրապարակած</div>
+        <div class="stats -flex -justify-between">
+          <div class="-flex">              
+            <h1 class="-space-12">39</h1>
+            <div class="-flex -flex-v -justify-center">
+              <span>new letters</span>
+              <span>նոր տառեր</span>
+            </div>
+          </div>
+          <div class="-flex">              
+            <h1 class="-space-12">30</h1>
+            <div class="-flex -flex-v -justify-center">
+              <span>ligatures</span>
+              <span>լիգատուրաներ</span>
+            </div>
+          </div>
+          <div class="-flex">              
+            <h1 class="-space-12">մն ԹՅ</h1>
+          </div>
+        </div>
+        <div class="separator -thick -margin-t-20"></div>
+      </div>
+    </section>
 
-.container div {
-    margin: 24px 0;
-}
+    <section class="preview" id="preview">
+      <div class="container">
+        <p class="-text-center wow fadeIn">
+          The old posters and signs in the traditional neighborhood of Buenos Aires called Montserrat inspired me to design a typeface that rescues the beauty of urban typography from the first half of the twentieth century. The goal is to rescue what is in Montserrat and set it free, under a free, libre and open source license, the SIL Open Font License.<br>
+          The original Montserrat Font Family is created by <a href="https://ar.linkedin.com/in/julieta-ulanovsky-aab2469" target="_blank">Julieta Ulanovsky</a>.<br>
+          Armenian letters are added by <a href="https://www.linkedin.com/in/vahanhovh" target="_blank">Vahan Hovhannisyan</a>.
+        </p>
+        <div class="separator -margin-v-48 -thick -dark wow fadeIn"></div>
+        <h2 class="-text-center -space-93 wow fadeIn">A B C D E F G H I J K L M N O P  Q R S T U V W X Y Z</h2>
+        <h2 class="-text-center -space-93 -margin-h-56 wow fadeIn">a b c d e f g h i j k l m n o p q r s t u v w x y z</h2>
+        <div class="separator -margin-v-48 -dark wow fadeIn"></div>
+        <h2 class="-text-center -space-93 wow fadeIn">Ա Բ Գ Դ Ե Զ Է Ը Թ Ժ Ի Լ Խ Ծ Կ Հ Ձ Ղ Ճ Մ Յ Ն Շ Ո Չ Պ Ջ Ռ Ս Վ Տ Ր Ց Ւ Փ Ք Օ Ֆ</h2>
+        <h2 class="-text-center -space-93 wow fadeIn">ա բ գ դ ե զ է ը թ ժ ի լ խ ծ կ հ ձ ղ ճ մ յ ն շ ո չ պ ջ ռ ս վ տ ր ց ւ փ ք և օ ֆ</h2>
+      </div> 
+    </section>
 
-.size-32 {
-    font-size: 32px;
-}
+    <section class="test" :class="bg" id="test-font">
+      <div class="container">
 
-.size-24 {
-    font-size: 24px;
-}
+        <div class="controls -flex -justify-between">
+          <div class="panel wow fadeIn">
+            <a :class="[fontBold ? '' : 'active']" @click="changeBold(false)">Regular</a>
+            <a :class="[fontBold ? 'active' : '']" @click="changeBold(true)">Bold</a>
+          </div>
+          <div class="slider-holder -flex -justify-between -align-center wow fadeIn" data-wow-delay="0.2s">
+            <div class="-flex-1">
+              <div id="slider"></div>
+            </div>
+            <div class="current-size">24px</div>
+          </div>
+          <div class="colors -flex -justify-between -align-center wow fadeIn" data-wow-delay="0.4s">
+            <span>Bg:</span> 
+            <div class="color -grey" @click="changeBg('test-grey')"></div>
+            <div class="color -black" @click="changeBg('test-black')"></div>
+            <div class="color -green" @click="changeBg('test-green')"></div>
+            <div class="color -red" @click="changeBg('test-red')"></div>
+          </div>
+        </div>
 
-.size-18 {
-    font-size: 18px;
-}
+        <div class="separator controls-separator"></div>
 
-.size-16 {
-    font-size: 16px;
-}
+        <div class="type-your-text">type your text below</div>
+        <p class="font-test wow fadeIn" :class="[fontBold ? 'bold' : '']" contenteditable="true">
+          Ես իմ անուշ Հայաստանի արևահամ բարն եմ սիրում,<br>
+          Մեր հին սազի ողբանվագ, լացակումած լարն եմ սիրում,<br>
+          Արնանման ծաղիկների ու վարդերի բույրը վառման,<br>
+          Ու նաիրյան աղջիկների հեզաճկուն պա՛րն եմ սիրում։
+        </p>
+        <div class="separator -thick"></div>
+      </div>
+    </section>
 
-.size-14 {
-    font-size: 14px;
-}
+    <section class="symbols-section" :class="currentType" id="symbols">
+      <div class="container">
+        
+        <div class="controls -flex -justify-center -margin-h-76 -margin-b-32">
+          <div class="panel -grey -margin-h-12 wow fadeIn">
+            <a :class="[fontBold ? '' : 'active']" @click="changeBold(false)">Regular</a>
+            <a :class="[fontBold ? 'active' : '']" @click="changeBold(true)">Bold</a>
+          </div>
+          <div class="panel -grey -margin-h-12 wow fadeIn" data-wow-delay="0.2s">
+            <a :class="[currentType=='letters' ? 'active' : '']" @click="changeType('letters')">Letters</a>
+            <a :class="[currentType=='ligatures' ? 'active' : '']" @click="changeType('ligatures')">Ligatures</a>
+            <a :class="[currentType=='symbols' ? 'active' : '']" @click="changeType('symbols')">Symbols</a>
+          </div>
+        </div>
 
-.size-12 {
-    font-size: 12px;
-}
+        <div class="separator -dark"></div>
 
-</style>
+        <div class="letters -flex -justify-between">
+          <div class="letter-large -text-center">
+            <div class="letter-view -margin-b-32 wow fadeIn" :class="[fontBold ? 'bold' : '']">{{toDisplay[currentIndex].letter}}</div>
+            <div class="letter-code wow fadeIn">
+              <span>{{toDisplay[currentIndex].name}}</span>
+              <span class="code">{{toDisplay[currentIndex].code}}</span>
+            </div>
+          </div>
+          <div class="alphabet" :class="[fontBold ? 'bold' : '']">
+            <div v-for="(letter, index) in toDisplay" class="wow fadeIn" :data-wow-delay="[index*0.015 + 's']"><a :class="[(currentIndex==index) ? 'active' : '']" @click="changeIndex(index)">{{letter.letter}}</a></div>
+          </div>
+        </div>
 
-<body>
-    <div class="container">
-        <div class="size-32">32px - Լինելով ծնողների մինուճար որդին՝ Պարույրը մանկությունից մշտապես զգացել է նրանց հոգատարությունն ու փայփայանքը։ Պարույրի մեջ պատվաստել էին նվիրվածություն հարազատների հանդեպ, արյունակցական կապի սրբազան զգացում, անկեղծ ու ջերմ սեր շրջապատի մարդկանց, հատկապես՝ մոր հանդեպ։ Ահա, թե ինչ է գրում բանաստեղծը գրառումների մի ծոցատետրում իր մոր՝ Ազիի (ինչպես կանչում էր նրան) մասին․ «Իմ մայրը մի կին էր, որի համար դժբախտության հասկացողությունը անհասկանալի մնաց ամբողջ կյանքում։</div>
-        <div class="size-24">24px - Լինելով ծնողների մինուճար որդին՝ Պարույրը մանկությունից մշտապես զգացել է նրանց հոգատարությունն ու փայփայանքը։ Պարույրի մեջ պատվաստել էին նվիրվածություն հարազատների հանդեպ, արյունակցական կապի սրբազան զգացում, անկեղծ ու ջերմ սեր շրջապատի մարդկանց, հատկապես՝ մոր հանդեպ։ Ահա, թե ինչ է գրում բանաստեղծը գրառումների մի ծոցատետրում իր մոր՝ Ազիի (ինչպես կանչում էր նրան) մասին․ «Իմ մայրը մի կին էր, որի համար դժբախտության հասկացողությունը անհասկանալի մնաց ամբողջ կյանքում։</div>
-        <div class="size-18">18px - Լինելով ծնողների մինուճար որդին՝ Պարույրը մանկությունից մշտապես զգացել է նրանց հոգատարությունն ու փայփայանքը։ Պարույրի մեջ պատվաստել էին նվիրվածություն հարազատների հանդեպ, արյունակցական կապի սրբազան զգացում, անկեղծ ու ջերմ սեր շրջապատի մարդկանց, հատկապես՝ մոր հանդեպ։ Ահա, թե ինչ է գրում բանաստեղծը գրառումների մի ծոցատետրում իր մոր՝ Ազիի (ինչպես կանչում էր նրան) մասին․ «Իմ մայրը մի կին էր, որի համար դժբախտության հասկացողությունը անհասկանալի մնաց ամբողջ կյանքում։</div>
-        <div class="size-16">16px - Լինելով ծնողների մինուճար որդին՝ Պարույրը մանկությունից մշտապես զգացել է նրանց հոգատարությունն ու փայփայանքը։ Պարույրի մեջ պատվաստել էին նվիրվածություն հարազատների հանդեպ, արյունակցական կապի սրբազան զգացում, անկեղծ ու ջերմ սեր շրջապատի մարդկանց, հատկապես՝ մոր հանդեպ։ Ահա, թե ինչ է գրում բանաստեղծը գրառումների մի ծոցատետրում իր մոր՝ Ազիի (ինչպես կանչում էր նրան) մասին․ «Իմ մայրը մի կին էր, որի համար դժբախտության հասկացողությունը անհասկանալի մնաց ամբողջ կյանքում։</div>
-        <div class="size-14">14px - Լինելով ծնողների մինուճար որդին՝ Պարույրը մանկությունից մշտապես զգացել է նրանց հոգատարությունն ու փայփայանքը։ Պարույրի մեջ պատվաստել էին նվիրվածություն հարազատների հանդեպ, արյունակցական կապի սրբազան զգացում, անկեղծ ու ջերմ սեր շրջապատի մարդկանց, հատկապես՝ մոր հանդեպ։ Ահա, թե ինչ է գրում բանաստեղծը գրառումների մի ծոցատետրում իր մոր՝ Ազիի (ինչպես կանչում էր նրան) մասին․ «Իմ մայրը մի կին էր, որի համար դժբախտության հասկացողությունը անհասկանալի մնաց ամբողջ կյանքում։</div>
-        <div class="size-12">12px - Լինելով ծնողների մինուճար որդին՝ Պարույրը մանկությունից մշտապես զգացել է նրանց հոգատարությունն ու փայփայանքը։ Պարույրի մեջ պատվաստել էին նվիրվածություն հարազատների հանդեպ, արյունակցական կապի սրբազան զգացում, անկեղծ ու ջերմ սեր շրջապատի մարդկանց, հատկապես՝ մոր հանդեպ։ Ահա, թե ինչ է գրում բանաստեղծը գրառումների մի ծոցատետրում իր մոր՝ Ազիի (ինչպես կանչում էր նրան) մասին․ «Իմ մայրը մի կին էր, որի համար դժբախտության հասկացողությունը անհասկանալի մնաց ամբողջ կյանքում։</div>
-    </div>
-</body>
+        <div class="separator -dark -thick"></div>
+
+      </div>
+    </section>
+
+    <section class="about -bg-grey -text-center" id="about">
+      <div class="container">        
+
+        <div class="title wow fadeIn">Translating Montserrat into Armenian</div>
+        <div class="separator -dark wow fadeIn"></div>
+        <h4 class="wow fadeIn">Difference 1: Latin and Armenian letters have different proportions</h4>
+        <p class="wow fadeIn">
+          In Armenian alphabet most of the letters have ascender and descender and several letters take the whole font height. Because of that, when the eyes read text in Armenian, it focuses on the full height, unlike the Latin, where the eye focuses on the font body.
+          That’s why the attitude to ascender and descenders is slightly different and they have to be a little longer.
+        </p>
+        <img src="public/img/example-1.png" class="example-1 wow fadeIn" width="862">
+        <p class="wow fadeIn">
+          So I increased the ascender height of the Armenian letters by 32pt and increased the descender height by 33pt.
+          Thus, making these small changes, I made it more readable for Armenian.
+        </p>
+        <img src="public/img/example-2.png" class="-margin-t-32 wow fadeIn" width="523">
+
+        <h4 class="wow fadeIn">Difference 2: In Armenian caps and lowercases don’t have any height difference</h4>
+        <p class="-margin-v-48 wow fadeIn">
+          Because in Armenian uppercase and lowercase letters are very much different by their graphema, where’s no need in using the Cap Line. This means that caps are ending on the ascender height line.
+        </p>
+        <img src="public/img/example-3.png" class="-margin-v-48 wow fadeIn" width="441">
+        <p class="-margin-v-48 wow fadeIn">
+          These changes are related to the Armenian letters only. I made it more readable in Armenian without changing the font DNA.
+        </p>
+
+      </div>
+    </section>
+
+    <footer class="-flex -justify-between">
+      <div>Montserrat</div>
+      <div>Presented by <a href="https://www.linkedin.com/in/vahanhovh" target="_blank">Vahan</a> and <a href="https://www.linkedin.com/in/gregoryhovanesyan" target="_blank">Greg</a></div>
+    </footer>
+
+    <script src="public/js/app.js"></script>
+  </body>
 </html>
