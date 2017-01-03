@@ -257,69 +257,164 @@ var ligatures = [
     code: 'uniFB21'
   },
   {
-    letter: 'մ՝',
-    name: 'men_boot',
+    letter: 'ու',
+    name: 'vo_vyun',
     code: 'uniFB22'
   },
   {
-    letter: 'ճ՝',
-    name: 'tche_boot',
+    letter: 'Մն',
+    name: 'Men_nu',
     code: 'uniFB23'
   },
   {
-    letter: 'Ա՝',
-    name: 'Ayb_boot',
+    letter: 'ՄՆ',
+    name: 'Men_Nu',
     code: 'uniFB24'
-  },
-  {
-    letter: 'Ե՝',
-    name: 'Ech_boot',
-    code: 'uniFB25'
-  },
-  {
-    letter: 'Ծ՝',
-    name: 'Tca_boot',
-    code: 'uniFB26'
-  },
-  {
-    letter: 'Ճ՝',
-    name: 'Tche_boot',
-    code: 'uniFB27'
-  },
-  {
-    letter: 'Մ՝',
-    name: 'Men_boot',
-    code: 'uniFB28'
-  },
-  {
-    letter: 'Ս՝',
-    name: 'Se_boot',
-    code: 'uniFB29'
-  },
-  {
-    letter: 'Ր՝',
-    name: 'Re_boot',
-    code: 'uniFB30'
-  },
-  {
-    letter: 'Վ՝',
-    name: 'Vev_boot',
-    code: 'uniFB31'
-  },
-  {
-    letter: 'ԹՅ',
-    name: 'To_YI',
-    code: 'uniFB32'
-  },
-  {
-    letter: 'ու',
-    name: 'vo_vyun',
-    code: 'uniFB33'
   },
   {
     letter: 'ՈՒ',
     name: 'Vo_Vyun',
+    code: 'uniFB25'
+  },
+  {
+    letter: 'մ՝',
+    name: 'men_boot',
+    code: 'uniFB26'
+  },
+  {
+    letter: 'ճ՝',
+    name: 'tche_boot',
+    code: 'uniFB27'
+  },
+  {
+    letter: 'ժ՝',
+    name: 'je_boot',
+    code: 'uniFB28'
+  },
+  {
+    letter: 'ձ՝',
+    name: 'dza_boot',
+    code: 'uniFB29'
+  },
+  {
+    letter: 'վ՝',
+    name: 'vev_boot',
+    code: 'uniFB30'
+  },
+  {
+    letter: 'Ա՝',
+    name: 'Ayb_boot',
+    code: 'uniFB31'
+  },
+  {
+    letter: 'Բ՝',
+    name: 'Ben_boot',
+    code: 'uniFB32'
+  },
+  {
+    letter: 'Ժ՝',
+    name: 'Je_boot',
+    code: 'uniFB33'
+  },
+  {
+    letter: 'Ծ՝',
+    name: 'Tca_boot',
     code: 'uniFB34'
+  },
+  {
+    letter: 'Ճ՝',
+    name: 'Tche_boot',
+    code: 'uniFB35'
+  },
+  {
+    letter: 'Մ՝',
+    name: 'Men_boot',
+    code: 'uniFB36'
+  },
+  {
+    letter: 'Չ՝',
+    name: 'Cha_boot',
+    code: 'uniFB37'
+  },
+  {
+    letter: 'Ս՝',
+    name: 'Se_boot',
+    code: 'uniFB38'
+  },
+  {
+    letter: 'Վ՝',
+    name: 'Vev_boot',
+    code: 'uniFB39'
+  },
+  {
+    letter: 'Ր՝',
+    name: 'Re_boot',
+    code: 'uniFB40'
+  },
+  {
+    letter: 'Ք՝',
+    name: 'Qe_boot',
+    code: 'uniFB41'
+  },
+  {
+    letter: 'Ա՛',
+    name: 'Ayb_shesht',
+    code: 'uniFB42'
+  },
+  {
+    letter: 'Ը՛',
+    name: 'Yt_shesht',
+    code: 'uniFB43'
+  },
+  {
+    letter: 'Ո՛',
+    name: 'Vo_shesht',
+    code: 'uniFB44'
+  },
+  {
+    letter: 'Ա՜',
+    name: 'Ayb_erk',
+    code: 'uniFB45'
+  },
+  {
+    letter: 'Ե՜',
+    name: 'Ech_erk',
+    code: 'uniFB46'
+  },
+  {
+    letter: 'Է՜',
+    name: 'Et_erk',
+    code: 'uniFB47'
+  },
+  {
+    letter: 'Ի՜',
+    name: 'Ini_erk',
+    code: 'uniFB48'
+  },
+  {
+    letter: 'Ա՞',
+    name: 'Ayb_harc',
+    code: 'uniFB49'
+  },
+  {
+    letter: 'Ը՞',
+    name: 'Yt_harc',
+    code: 'uniFB50'
+  },
+  {
+    letter: 'Ո՞',
+    name: 'Vo_harc',
+    code: 'uniFB51'
+  },
+  {
+    letter: 'Օ՞',
+    name: 'O_arm+harc',
+    code: 'uniFB52'
+  },
+  {
+    letter: 'ԹՅ',
+    name: 'To_YI',
+    code: 'FB53'
   }
 ]; 
 
