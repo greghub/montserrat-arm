@@ -223,7 +223,8 @@ body {
     line-height: 78px; }
 
 .test {
-  padding: 68px 0 48px 0; }
+  padding: 68px 0 48px 0;
+  transition: all 0.5s ease; }
   .test.test-grey {
     background-color: #F5F6F7; }
     .test.test-grey .separator {
@@ -338,26 +339,26 @@ body {
       .symbols-section .letters .letter-code span {
         margin: 0 4px; }
   .symbols-section .alphabet {
-    width: 354px; }
+    width: 336px; }
     .symbols-section .alphabet div {
-      display: inline-block; }
+      display: inline-block;
+      height: 50px;
+      text-align: center; }
     .symbols-section .alphabet a {
       color: #333333;
       font-size: 18px;
       letter-spacing: 0.6px;
-      line-height: 58px;
-      padding: 0 3px;
-      transition: color 0.2s ease; }
+      line-height: 22px;
+      padding: 4px 3px;
+      transition: color 0.2s ease;
+      display: inline-block;
+      width: 36px; }
       .symbols-section .alphabet a:hover, .symbols-section .alphabet a.active {
         color: #F01B47; }
       .symbols-section .alphabet a.active {
+        transition: background-color 0.3s ease;
         background-color: #F5F6F7;
-        border-radius: 10px;
-        padding: 4px 3px; }
-  .symbols-section.ligatures .alphabet a, .symbols-section.symbols .alphabet a {
-    margin-left: 12px; }
-  .symbols-section.symbols .alphabet a {
-    padding: 4px 12px; }
+        border-radius: 10px; }
 
 .about {
   padding: 68px 0 48px 0;
@@ -379,5 +380,3 @@ footer {
   font-size: 12px;
   line-height: 15px;
   color: #fff; }
-  footer a {
-    color: #F01B47; }

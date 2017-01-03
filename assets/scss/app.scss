@@ -79,7 +79,8 @@ body {
 }
 
 .test {
-  padding: 68px 0 48px 0;
+  padding: 68px 0 48px 0;    
+  transition: all 0.5s ease;
   &.test-grey {
     background-color: #F5F6F7;
     .separator {
@@ -238,37 +239,30 @@ body {
     }
   }
   .alphabet {
-    width: 354px;
+    width: 336px;
     div {
       display: inline-block;
+      height: 50px;
+      text-align: center;
     }
     a {    
       color: $main;
       font-size: 18px;
       letter-spacing: 0.6px;
-      line-height: 58px;
-      padding: 0 3px;
+      line-height: 22px;
+      padding: 4px 3px;
       transition: color 0.2s ease;
+      display: inline-block;
+      width: 36px;
       &:hover,
       &.active {
         color: $primary;
       }
       &.active {
+        transition: background-color 0.3s ease;
         background-color: #F5F6F7;
         border-radius: 10px;
-        padding: 4px 3px;
       }
-    }
-  }
-  &.ligatures,
-  &.symbols {
-    .alphabet a {
-      margin-left: 12px;
-    }
-  }  
-  &.symbols {
-    .alphabet a {
-      padding: 4px 12px;
     }
   }
 }
