@@ -66,21 +66,21 @@
   background-color: #F5F6F7; }
 
 @font-face {
-  font-family: 'Montserrat_am1-Regular';
-  src: url("../fonts/Montserrat_am1-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat_am1-Regular.woff") format("woff"), url("../fonts/Montserrat_am1-Regular.ttf") format("truetype"), url("../fonts/Montserrat_am1-Regular.svg#Montserrat_am1-Regular") format("svg");
+  font-family: 'Montserrat_am3-Regular';
+  src: url("../fonts/Montserrat_am3-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat_am3-Regular.woff") format("woff"), url("../fonts/Montserrat_am3-Regular.ttf") format("truetype"), url("../fonts/Montserrat_am3-Regular.svg#Montserrat_am3-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Montserrat_am1-Bold';
-  src: url("../fonts/Montserrat_am1-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat_am1-Bold.woff") format("woff"), url("../fonts/Montserrat_am1-Bold.ttf") format("truetype"), url("../fonts/Montserrat_am1-Bold.svg#Montserrat_am1-Bold") format("svg");
+  font-family: 'Montserrat_am3-Bold';
+  src: url("../fonts/Montserrat_am3-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat_am3-Bold.woff") format("woff"), url("../fonts/Montserrat_am3-Bold.ttf") format("truetype"), url("../fonts/Montserrat_am3-Bold.svg#Montserrat_am3-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 h1 {
   font-size: 72px;
   line-height: 88px;
-  font-family: 'Montserrat_am1-Bold', sans-serif;
+  font-family: 'Montserrat_am3-Bold', sans-serif;
   font-weight: 700;
   margin-top: 12px;
   margin-bottom: 12px; }
@@ -89,14 +89,14 @@ h2 {
   font-size: 56px;
   line-height: 68px;
   letter-spacing: 0.1px;
-  font-family: 'Montserrat_am1-Bold', sans-serif;
+  font-family: 'Montserrat_am3-Bold', sans-serif;
   font-weight: 700; }
 
 h3 {
   font-size: 32px;
   line-height: 39px;
   letter-spacing: 0.5px;
-  font-family: 'Montserrat_am1-Bold', sans-serif;
+  font-family: 'Montserrat_am3-Bold', sans-serif;
   font-weight: 700;
   margin-top: 21px;
   margin-bottom: 12px; }
@@ -104,7 +104,7 @@ h3 {
 h4 {
   font-size: 24px;
   line-height: 29px;
-  font-family: 'Montserrat_am1-Bold', sans-serif;
+  font-family: 'Montserrat_am3-Bold', sans-serif;
   font-weight: 700;
   margin-top: 56px;
   margin-bottom: 14px; }
@@ -121,7 +121,7 @@ p {
   color: #505050; }
 
 .bold {
-  font-family: 'Montserrat_am1-Bold', sans-serif;
+  font-family: 'Montserrat_am3-Bold', sans-serif;
   font-weight: 700; }
 
 ::selection {
@@ -164,7 +164,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  font-family: 'Montserrat_am1-Regular', sans-serif; }
+  font-family: 'Montserrat_am3-Regular', sans-serif; }
 
 .main {
   height: 707px;
@@ -189,7 +189,7 @@ body {
     text-transform: uppercase;
     font-size: 0.875em;
     line-height: 42px;
-    font-family: 'Montserrat_am1-Bold', sans-serif;
+    font-family: 'Montserrat_am3-Bold', sans-serif;
     font-weight: 700;
     transition: color 0.3s ease; }
     .navigation .nav-item:hover, .navigation .nav-item.active {
@@ -200,14 +200,14 @@ body {
 
 .description {
   font-size: 12px;
-  font-family: 'Montserrat_am1-Bold', sans-serif;
+  font-family: 'Montserrat_am3-Bold', sans-serif;
   font-weight: 700;
   line-height: 15px; }
 
 .stats {
   padding: 0 52px; }
   .stats span {
-    font-family: 'Montserrat_am1-Bold', sans-serif;
+    font-family: 'Montserrat_am3-Bold', sans-serif;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.3px;
