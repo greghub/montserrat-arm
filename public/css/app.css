@@ -316,7 +316,8 @@ body {
     font-size: 24px;
     line-height: 2em;
     color: #333333;
-    outline: none; }
+    outline: none;
+    transition: font-size 0.5s ease; }
     .test .font-test:focus {
       background-color: rgba(178, 183, 188, 0.4); }
 
